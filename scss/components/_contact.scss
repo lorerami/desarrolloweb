@@ -1,0 +1,76 @@
+.contact {
+
+    .contact-paragraph-one{
+        margin-left: 46px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        margin-top: 120px;
+    }
+
+    .contact-paragraph-two{
+        margin-top: 40px;
+        margin-left: 46px;   
+    }
+
+
+    .contact-information {
+        li {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 25px;
+
+        }
+
+        .information-one {
+            padding-top: 30px;
+            font-weight: bold;
+        }
+
+        .information-two {
+            padding-top: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .division {
+        margin-top: 40px;
+        width: 100%;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+
+    .form {
+        margin-left: 46px;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif; 
+
+        input {
+            background-color: rgb(219, 213, 213);
+            border: none;
+            height: 30px;
+            border-radius: 6px;
+        }
+
+        .button-contact {
+            @extend %button;
+        }
+    }
+
+    .last-paragraph{
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 46px;
+        padding-top: 40px;
+    }
+    
+   
+    
+}
+
+@media only screen and (max-width: 767px) {
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

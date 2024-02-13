@@ -1,0 +1,22 @@
+.container-image-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+    margin-left: 46px;
+    margin-right: 46px;
+    margin-top: 40px;
+
+    .card-hombre{
+        margin-bottom: 20px;
+        margin-right: 5px;
+
+        .btn:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+    }
+
+    .card-hombre-contain{
+        text-align: center;
+    }
+}

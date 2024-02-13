@@ -1,0 +1,125 @@
+@import "base/variables";
+@import "base/extends";
+@import "components/index";
+@import "components/hombre";
+@import "components/mujer";
+@import "components/nosotros";
+@import "components/contact";
+
+.menu {
+    background: $primary-color !important;
+    position: fixed;
+    z-index: 100;
+
+    li {
+        background-color: $secondary-color;
+        margin: 5px;
+        color: $secondary-color;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 100px;
+        text-align: center;
+        font-family: $font-family-primary;
+    }
+
+    li:hover {
+        background-color: rgb(243, 239, 239);
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    span {
+        background-color: $secondary-color;
+        border-radius: 5px;
+    }
+
+    .active {
+        border-bottom: 3px rgb(77, 77, 77) solid;
+        font-weight: bolder;
+    }
+
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+}
+
+
+.footer {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    p {
+        color: $primary-color;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .first-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .first-container img {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.title-main {
+    margin-top: 140px;
+    font-weight: bold;
+    color: $font-color-primary;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    width: 150px;
+    height: 38px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-family: $font-family-primary;
+    box-shadow: 3px 3px 5px $primary-color;
+}
+
+.button:hover {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+}
+
+h1 {
+    text-align: center;
+    font-family: $font-family-primary;
+
+}
+
+h2 {
+    padding-left: 40px;
+    margin-top: 60px;
+    font-family: $font-family-primary;
+}
+
+
