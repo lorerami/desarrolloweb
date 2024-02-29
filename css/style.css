@@ -1,6 +1,5 @@
 .container-paragraph-images-about-us, .container-paragraph-images-index {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-top: 60px;
   margin-left: 46px;
@@ -72,6 +71,7 @@
 .container-paragraph-images-index {
   background-color: #222;
   background-image: linear-gradient(to bottom, #000000, #868686);
+  flex-direction: row;
 }
 
 .button-index {
@@ -99,6 +99,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container-img {
     width: 95%;
+    height: 1200px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     grid-template-rows: 200px;
@@ -167,11 +168,22 @@
 .container-paragraph-images-about-us {
   background-color: #555;
   background-image: linear-gradient(to bottom, #000000, #555555);
+  flex-direction: row;
+}
+
+.container-paragraph-images-about-us:nth-of-type(1) {
+  flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 767px) {
   .container-paragraph-images-about-us img:nth-child(2) {
     display: none;
+  }
+  .container-paragraph-images-about-us:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .container-paragraph-images-about-us:nth-of-type(2) {
+    flex-direction: row;
   }
 }
 .contact .contact-paragraph-one {

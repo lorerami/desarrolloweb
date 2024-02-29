@@ -36,6 +36,7 @@
     @extend %container-paragraph-images;
     background-color: #222;
     background-image: linear-gradient(to bottom, #000000, #868686);
+    flex-direction: row;
 }
 
 .button-index {
@@ -70,6 +71,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-img{
         width: 95%;
+        height: 1200px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-rows: 200px;
